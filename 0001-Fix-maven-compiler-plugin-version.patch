@@ -1,0 +1,27 @@
+From 5c246e8a588e4c7a1ea9267bd973d941ac922fd4 Mon Sep 17 00:00:00 2001
+From: Athenas Jimenez Gonzalez <athenas.jimenez.gonzalez@intel.com>
+Date: Thu, 12 Jan 2017 16:24:32 +0000
+Subject: [PATCH] Fix maven compiler plugin version
+
+---
+ pom.xml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/pom.xml b/pom.xml
+index b92ce5d..e8b2895 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -91,8 +91,8 @@ under the License.
+     <sourceReleaseAssemblyDescriptor>source-release</sourceReleaseAssemblyDescriptor>
+     <gpg.useagent>true</gpg.useagent>
+     <arguments />
+-    <maven.compiler.source>1.6</maven.compiler.source>
+-    <maven.compiler.target>1.6</maven.compiler.target>
++    <maven.compiler.source>1.8</maven.compiler.source>
++    <maven.compiler.target>1.8</maven.compiler.target>
+     <surefire.version>2.19.1</surefire.version>
+   </properties>
+ 
+-- 
+2.11.0
+

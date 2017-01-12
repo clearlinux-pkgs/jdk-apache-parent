@@ -4,7 +4,7 @@
 #
 Name     : jdk-apache-parent
 Version  : 18
-Release  : 5
+Release  : 6
 URL      : http://repo1.maven.org/maven2/org/apache/apache/18/apache-18-source-release.zip
 Source0  : http://repo1.maven.org/maven2/org/apache/apache/18/apache-18-source-release.zip
 Summary  : No detailed summary available
@@ -72,6 +72,7 @@ BuildRequires : openjdk-dev
 BuildRequires : python3
 BuildRequires : six
 BuildRequires : xmvn
+Patch1: 0001-Fix-maven-compiler-plugin-version.patch
 
 %description
 No detailed description available
@@ -86,6 +87,7 @@ data components for the jdk-apache-parent package.
 
 %prep
 %setup -q -n apache-18
+%patch1 -p1
 
 python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin  :maven-site-plugin pom.xml
 
